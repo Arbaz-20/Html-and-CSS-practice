@@ -1,0 +1,30 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 20px;
+    padding: 20px;
+    box-sizing: content-box;
+}
+
+.box{
+    padding: 20px;
+    /* how to define border */
+    border: 2px solid black;
+    /* how to define margin using T R B L */
+    margin: 20px 0px 20px 0px;
+    width: 600px;
+    text-align: center;
+}
+
+.box-1{
+    border-radius: 25px;
+}
+.box-2{
+    border-radius: 10px;
+}
+
+.box-3{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 20px;
+}

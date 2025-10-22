@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins",sans-serif;
+    border: 3px solid red;
+    margin: 10px;
+    line-height: 35px;
+}
+
+/* Type selectors */
+/* h2{
+    color: red;
+    font-size: 30px;
+}
+
+a{
+    color: blue;
+    text-decoration: none;
+} */
+
+/* .sporty{
+    color: red;
+}
+
+.casual{
+    color: blue;
+}
+
+.formal{
+    color: brown;
+} */
+
+#container{
+    max-width: 600px;
+    margin: 100px auto;
+    padding: 20px;
+}
+
+.sporty, .casual{
+    font-size: 50px;
+}
+/* 
+#container p{
+    background: blue;
+}*/
+
+p{
+    margin: 20px 20px;
+    font-weight: 500;
+} 
+
+.sporty_container h1{
+    font-size: 1000;
+    font-weight: 900;
+    font-style: normal;
+    font-variant: normal;
+}
+
+.Casual_container a{
+    text-decoration: none;
+    color: red;
+    text-transform: uppercase;
+}
+
+.Casual_container h1{
+    color: red;
+    text-transform: uppercase;
+    text-indent: 20px;
+    letter-spacing: 2px;
+    word-spacing: 15px;
+    text-align: center;
+}
+
+.sporty_container h1{
+    color: green;
+}
+
+.atag{
+    color: red;
+}
+
+.atag:hover{
+    color: green
+}
+
+.atag:active{
+    background: purple;
+}
+.atag:focus{
+    color: yellow;
+}
+
+.atag:visited{
+    color: coral;
+}
