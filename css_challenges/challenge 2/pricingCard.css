@@ -133,3 +133,15 @@ li{
     text-align: center;
     font-weight: 600;
 }
+
+
+@media (max-width:888px) {
+    .pricing{
+        flex-direction: column;
+    }
+
+    .container{
+        margin: 2rem;
+        padding: 40px 30px;
+    }
+}
