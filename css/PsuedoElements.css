@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+p::first-letter{
+    font-size: 2rem;
+    color:rebeccapurple;
+    padding-right: 2px;
+    font-weight: bold;
+}
+
+p::first-line{
+    color: purple;
+}
+
+p::selection{
+    color: red;
+    background: yellow;
+}
+
+/* two ways to put color on border using pseudo selectors */
+
+/* 
+input:required{
+    border-color: red;
+} */
+
+input[required]{
+    border-color: red;
+}
+
+/* placeholder stuff */
+input::placeholder{
+    color: hotpink;
+    font-weight: bold;
+}
+
+/* file selection button changes using pseudo selection */
+input::file-selector-button{
+    font-weight: bold;
+    color: dodgerblue;
+    background: #fff;
+    padding: 0.5rem;
+    border: thiin solid gray;
+    border-radius: 5px;
+}
+
+/* marker using the emoji stuff */
+li::marker{
+    content: '👉';
+}

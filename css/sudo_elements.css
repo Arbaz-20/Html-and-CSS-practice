@@ -1,10 +1,101 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    font-family: 'Poppins', sans-serif;
+body {
+  font-family: 'Poppins', sans-serif;
+}
 
+nav {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: inline;
+  margin-right: 20px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Form Styles */
+.container {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input,
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* select by type attribute*/
+input[type='email']{
+    border-color: green;
+}
+
+/* select type by name*/
+input[type='name']{
+    border-color: blue;
+}
+
+/*select by type id*/
+input[type='text'][id='name']{
+    border-color: red;
+}
+
+/*select button with type submit*/
+button[type='submit']{
+    background-color: purple;
+}
+
+a[href^='#']{
+    color: yellow;
+}
+
+a[href$='.com']{
+    color: lightgreen;
 }
