@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 10px auto;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* style the first li of its parent */
+ul li:first-of-type{
+    font-weight: bold;
+}
+
+/* style the last li of its parent */
+ul li:last-of-type{
+    font-weight: bold;
+}
+
+/* style the 3rd item  */
+ul li:nth-child(3){
+    font-weight: bold;
+}
+
+/* style the 6th item */
+ul li :nth-child(6){
+    font-weight: bold;
+}
+
+/* style the even items */
+ul li:nth-child(even){
+    background-color: lightblue;
+}
+
+/* style the odd items */
+ul li:nth-child(odd){
+    background-color: lightgreen;
+}
+
+/* nth of type vs nth child */
+p:nth-of-type(2){
+    font-weight: bold;
+}
+
+p:nth-child(2){
+    color: red;
+}
+
+/* Using suedo classes with pseudo elements */
+.data p:first-of-type::first-letter{
+    font-weight: bold;
+    font-size: 2rem;
+    color: red;
+}
+
+/* just added padding to see the changes */
+.data p{
+    padding: 10px 25px;   
+}
