@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    max-width: 600px;
+    margin: 30PX auto;
+}
+
+/* previously people follow this approach */
+.container h1,
+.container h2,
+.container p{
+    color: red;
+
+}
+
+/* new way of doing css now */
+/* ':is' we use this for the selector and we tell the code to peroform the task if the selectors in brackets are present*/
+.container :is(h1,h2,p){
+    color: blue;
+}
+
+a:is(:hover,:focus){
+    background-color: pink;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+/* same way you can use ':where' this is something which is use to select as same as ':is' but ':where' has low specificity */
+.container :where(h1,h2,p){
+    color:green;
+}
+
+/* ':has' will check weather the selected h3 and a is present in the specific container or div if it is then it will colorise the text */
+.container :has(h3, a){
+    color: yellowgreen;
+}
+
+/* it also helps to check if the 2 different elements are present one after the another if yes then perform operations */
+.container h1:has(+ h2){
+    color: orange;
+}
