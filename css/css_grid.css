@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+
+}
+
+h1{
+    text-align: center;
+}
+
+/* Grid also work as same as flex box but a bit more function and feature is there */
+.container,
+.second_container,
+.third_container{
+    max-width: 1100px;
+    margin: 30px auto;
+    background: #f4f4f4;
+}
+
+.item{
+    background-color: coral;
+    padding: 1rem;
+    border: 1px solid #333;
+    text-align: center;
+}
+
+.item-grid{
+    display: grid;
+    grid-template-columns: 600px 1fr 1fr;
+    grid-row-gap: 15px;
+    grid-column-gap: 15px;
+}
+
+/* 
+grid methods how and when to use  
+    1. repeat 
+*/
+.item-grid-2{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap:15px;
+    grid-column-gap:15px;
+}
+
+/* 
+grid methods how and when to use  
+    2. minmax() 
+*/
+.item-grid-3{
+    display: grid;
+    /* grid-template-columns: repeat(3,minmax(400px,1fr)) */
+    grid-template-columns: minmax(200px,1fr) minmax(200px,1fr) minmax(200px,1fr);
+}
