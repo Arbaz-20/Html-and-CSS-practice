@@ -55,4 +55,6 @@ grid methods how and when to use
     display: grid;
     /* grid-template-columns: repeat(3,minmax(400px,1fr)) */
     grid-template-columns: minmax(200px,1fr) minmax(200px,1fr) minmax(200px,1fr);
+    grid-row-gap:5px;
+    grid-column-gap:10px;
 }
