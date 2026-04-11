@@ -9,5 +9,22 @@ body{
 }
 
 .container{
-    
+    max-width: 700px;
+    margin: 50px auto;
+}
+
+.item-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 10px;
+    column-gap: 10px;
+    grid-template-rows: 1fr 2fr 3fr;
+    grid-auto-rows: 4fr;
+}
+
+.item{
+    padding: 20px;
+    background: coral;
+    border: 1px solid black;
+    text-align: center;
 }
