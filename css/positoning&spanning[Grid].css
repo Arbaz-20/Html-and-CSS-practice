@@ -24,6 +24,47 @@ body{
 
 .item-grid{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    
+    /* this code is use to make the grid style in column and row format */
+    /* grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr); */
+
+    /* shortcut to make row and column same as above */
+    grid-template:repeat(3,1fr) / repeat(3,1fr);
     text-align: center;
+}
+
+.item1{
+    /* longer way to manupulate item */
+    /* grid-column-start: 1;
+    grid-column-end: 3; */
+    /* grid-column: 1/3; */
+
+    /* thrid way we can use span too */
+    /* grid-column: 1/span 2; */
+
+    /* 4th way is if we are starting the row or column postion from 1 then we dont need to mention it there */
+    grid-column: span 2;
+}
+
+.item3{
+    /* grid-row-start: 2;
+    grid-row-end:4; */
+
+    /* grid-row:2/4; */
+
+    /* this way also grid using span 2 */
+    /* grid-row: 2/span 2; */
+
+    /* here also if the css starts from 1st postion of the grid then if we dont mention 1 it will still work */
+    grid-row: span 2;
+}
+
+.item9{
+    grid-column: 2/4;
+}
+
+h1{
+    text-align: center;
+    margin: 20px auto;
 }
