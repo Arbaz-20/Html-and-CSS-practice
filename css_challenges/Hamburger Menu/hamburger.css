@@ -27,6 +27,11 @@ img{
     padding: 0 2rem;
 }
 
+.container .logo{
+    cursor: pointer;
+}
+
+
 .navbar{
     background: lightblue;
     padding: 1rem 2rem;
