@@ -5,6 +5,12 @@
     font-family: 'Poppins', sans-serif;
 }
 
+h1{
+    text-align: center;
+    margin: 20px auto;
+}
+
+
 .container{
     height: 100vh;
     margin: 0;
